@@ -118,8 +118,8 @@ me@gbraad.nl
 
 ## Containers
 
-  * provide process-isolation
   * possibility to allocate resources
+  * provide process-isolation
 
 
 ## Example
