@@ -6,7 +6,7 @@ Gerard Braad
 me@gbraad.nl
 
 
-## software distribution
+## Software distribution
 
 
 ## Problem space
@@ -66,9 +66,8 @@ me@gbraad.nl
   * GTK
 
 
-## How to solve
+## Solutions
 
-  * static compilation
 
 
 ## Solutions
@@ -83,10 +82,15 @@ me@gbraad.nl
 
 ## Solutions
 
+  * containers
+
+
+## Solutions
+
+  * containers
   * AppImage
   * snapcraft
   * flatpak
-  * containers
 
 
 ## Containers
