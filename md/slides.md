@@ -88,9 +88,7 @@ me@gbraad.nl
 ## Solutions
 
   * containers
-  * AppImage
-  * snapcraft
-  * flatpak
+  * ...
 
 
 ## Containers
@@ -227,6 +225,14 @@ $ openstack --os-cloud dream server list
 
   * a security mechanism for separating running programs
   * limit view of the operating system
+
+
+## Solutions
+
+  * containers
+  * AppImage
+  * snapcraft
+  * flatpak
 
 
 ## flatpak
