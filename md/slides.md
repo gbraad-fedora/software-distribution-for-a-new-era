@@ -9,9 +9,10 @@ me@gbraad.nl
 ## Software distribution
 
 
-## Problem space
 
-  * Software packages
+## Windows
+
+  * executable
 
 
 ## Windows
@@ -20,10 +21,23 @@ me@gbraad.nl
   * installer
 
 
+## Linux
+
+
+
+## Problem space
+
+  * Software packages
+
+
 ## Problem space
 
   * Software packages
     * who creates them?
+
+
+## dependency hell
+
 
 
 ## dependency hell
@@ -43,8 +57,8 @@ me@gbraad.nl
 ## Mac OS
 
   * executable
-  * yellow package
-  * .app (dmg)
+  * yellow package (.pkg)
+  * [name].app (dmg)
 
 
 ## structure
@@ -72,7 +86,7 @@ me@gbraad.nl
 
 ## Solutions
 
-  * static compile
+  * static compilation
 
 
 ## Solutions
@@ -93,11 +107,19 @@ me@gbraad.nl
 
 ## Containers
 
+
+
+## Containers
+
 ... as the 'Delivery Unit'
 
 
 
 ## Docker
+
+
+
+## Example
 
 
 
@@ -320,6 +342,15 @@ $ flatpak run org.gnome.gedit
     
     (gedit:2): Gtk-WARNING **: Could not load a pixbuf from icon theme.
     This may indicate that pixbuf loaders or the mime database could not be found.
+
+
+## LibreOffice
+
+```
+$ wget http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak
+$ flatpak install --user --bundle LibreOffice.flatpak    
+$ flatpak run org.libreoffice.LibreOffice
+```
 
 
 ## Anatomy
