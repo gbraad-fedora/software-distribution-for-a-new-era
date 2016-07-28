@@ -102,14 +102,14 @@ me@gbraad.nl
 
 ## Docker
 
-  * LXC
   * cgroups
+  * namespaces
 
 
 ## Docker
 
-  * provide process-isolation
   * possibility to allocate resources
+  * provide process-isolation
 
 
 ## Containers
@@ -141,14 +141,19 @@ me@gbraad.nl
 ## Sandboxing
 
   * a security mechanism for separating running programs
+  * limit view of the operating system
 
 
 ## flatpak
 
+  * safe environment for running applications
+
 
 ## flatpak
 
-  * desktop session
+  * sandboxing
+    * cgroups
+    * namespaces
 
 
 ## flatpak
@@ -160,6 +165,32 @@ me@gbraad.nl
 
   * runtime
   * application libraries
+
+
+## Anatomy
+
+```
+metadata
+/files
+/files/bin
+/export
+```
+
+
+## Anatomy
+
+```
+[Application]
+name=org.gnome.gedit
+runtime=org.gnome.Platform/x86_64/3.20
+sdk=org.gnome.Sdk/x86_64/3.20
+command=gedit
+```
+
+
+## flatpak
+
+  * desktop session
 
 
 ## ostree
