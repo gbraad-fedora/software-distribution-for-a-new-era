@@ -1,11 +1,10 @@
 # Software distribution for a new era
 
-## 'containers', ostree, flatpak 
+## Software distribution for a new era
 Gerard Braad
 
 me@gbraad.nl
 
 
   * [Slides](./slides.html)
-  * [Outline](./outline.pdf)
   * [Handout](./slides.pdf)

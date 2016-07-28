@@ -1,3 +1,3 @@
 # Summary
 
-  * [Tools](md/slides.md)
+  * [Slides](md/slides.md)
