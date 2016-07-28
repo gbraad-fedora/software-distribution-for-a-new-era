@@ -184,6 +184,10 @@ $ openstack --os-cloud dream server list
     +--------------------------------------+-------+--------+--------------------------------------------------------------+
 
 
+## What just happened?
+
+
+
 ## Docker
 
   * cgroups
@@ -225,6 +229,12 @@ $ openstack --os-cloud dream server list
 
   * a security mechanism for separating running programs
   * limit view of the operating system
+
+
+## Solutions
+
+  * containers
+  * ...
 
 
 ## Solutions
