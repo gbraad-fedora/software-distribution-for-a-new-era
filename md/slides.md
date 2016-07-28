@@ -98,10 +98,92 @@ me@gbraad.nl
 ... as the 'Delivery Unit'
 
 
-## What is a 'container'
-
 
 ## Docker
+
+
+
+## Example
+
+  * youtube-dl
+
+
+## Example
+
+  * youtube-dl
+  * CentOS 7
+
+
+## alias
+
+```
+$ cat ./.zshrc.d/alias.sh
+```
+
+    alias stack='docker run -it --rm -v ~/.stack:/root/.stack registry.gitlab.com/gbraad/openstack-client:centos stack'
+    alias openstack='docker run -it --rm -v ~/.config/openstack:/root/.config/openstack registry.gitlab.com/gbraad/openstack-client:centos openstack'
+    alias youtube-dl='docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl'
+
+
+## invoke
+
+```
+$ youtube-dl https://youtu.be/SquTeFYq3K8
+```
+
+
+## invoke
+
+```
+$ youtube-dl https://youtu.be/SquTeFYq3K8
+```
+
+    Unable to find image 'vimagick/youtube-dl:latest' locally
+    latest: Pulling from vimagick/youtube-dl
+    e110a4a17941: Already exists 
+    a0733e3a9603: Pull complete 
+    eaf92aad0831: Pull complete 
+    Digest: sha256:24a24cbddbfc695f210bbf21769c60eea9626cf90fad4f3f9b41279a0bfd22e7
+    Status: Downloaded newer image for vimagick/youtube-dl:latest
+
+
+## invoke
+
+```
+$ youtube-dl https://youtu.be/SquTeFYq3K8
+```
+
+    Unable to find image 'vimagick/youtube-dl:latest' locally
+    latest: Pulling from vimagick/youtube-dl
+    e110a4a17941: Already exists 
+    a0733e3a9603: Pull complete 
+    eaf92aad0831: Pull complete 
+    Digest: sha256:24a24cbddbfc695f210bbf21769c60eea9626cf90fad4f3f9b41279a0bfd22e7
+    Status: Downloaded newer image for vimagick/youtube-dl:latest
+    [youtube] SquTeFYq3K8: Downloading webpage
+    [youtube] SquTeFYq3K8: Downloading video info webpage
+    [youtube] SquTeFYq3K8: Extracting video information
+    [youtube] SquTeFYq3K8: Downloading MPD manifest
+    [download] Destination: Tomorrowland 2015 _ Josh Wink-SquTeFYq3K8.f248.webm
+    [download] 100% of 2.07GiB in 01:3112MiB/s ETA 00:008:27
+    [download] Destination: Tomorrowland 2015 _ Josh Wink-SquTeFYq3K8.f251.webm
+    [download] 100% of 90.05MiB in 00:0526MiB/s ETA 00:00505
+    [ffmpeg] Merging formats into "Tomorrowland 2015 _ Josh Wink-SquTeFYq3K8.webm"
+    Deleting original file Tomorrowland 2015 _ Josh Wink-SquTeFYq3K8.f248.webm (pass -k to keep)
+    Deleting original file Tomorrowland 2015 _ Josh Wink-SquTeFYq3K8.f251.webm (pass -k to keep)
+
+
+## OpenStack client
+
+```
+$ openstack --os-cloud dream server list
+```
+
+    +--------------------------------------+-------+--------+--------------------------------------------------------------+
+    | ID                                   | Name  | Status | Networks                                                     |
+    +--------------------------------------+-------+--------+--------------------------------------------------------------+
+    | bbeda46a-080d-4941-846a-86170ccc60bf | vps13 | ACTIVE | public=2607:f298:5:101d:f816:3eff:fe9e:53a1, 208.113.133.113 |
+    +--------------------------------------+-------+--------+--------------------------------------------------------------+
 
 
 ## Docker
@@ -116,15 +198,14 @@ me@gbraad.nl
   * provide process-isolation
 
 
+## What is a 'container'
+
+
+
 ## Containers
 
   * possibility to allocate resources
   * provide process-isolation
-
-
-## Example
-
-  * alias 'youtube-dl'
 
 
 ## Process isolation
