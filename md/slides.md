@@ -6,6 +6,12 @@ Gerard Braad
 me@gbraad.nl
 
 
+## Who am I
+
+  * software engineer
+  * 
+
+
 ## Software distribution
 
 
@@ -783,3 +789,15 @@ Warning keystonerc not sourced
   * https://github.com/gbraad/docker-flatpak
   * https://gitlab.com/gbraad/byo-atomic
   * https://gbraad.gitbooks.io/scratchpad/content/technology/ostree.html
+
+
+## Get in touch
+
+![](img/email.png)
+
+
+## Get in touch
+
+![](img/wechat.jpg)
+
+
