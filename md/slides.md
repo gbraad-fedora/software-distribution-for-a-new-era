@@ -333,7 +333,7 @@ MAINTAINER Gerard Braad <me@gbraad.nl>
 
 ## flatpak
 
-![Architecture](img/flatpak.png)
+![](img/flatpak.png)
 
 
 ## flatpak
