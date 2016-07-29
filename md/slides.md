@@ -12,13 +12,20 @@ me@gbraad.nl
 
 ## Windows
 
-  * executable
+  * .exe executable
 
 
 ## Windows
 
-  * executable
-  * installer
+  * .exe executable
+  * .msi installer
+
+
+## Windows
+
+  * .exe executable
+  * .msi installer
+  * Store
 
 
 ## Linux
@@ -45,14 +52,14 @@ me@gbraad.nl
 
 
 
-## dependency hell
+## Dependency hell
 
   * .dll
   * Visual Basic runtime
   * Visual C++ runtime
 
 
-## dependency hell
+## Dependency hell
 
   * .NET
   * gac (global assembly cache)
@@ -66,7 +73,7 @@ me@gbraad.nl
   * [name].app (dmg)
 
 
-## structure
+## Structure
 
 ```
 /
