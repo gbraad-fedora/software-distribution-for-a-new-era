@@ -126,3 +126,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .odd, .even {
     color: #ffffff;
 }
+
+.reveal section img {
+  border: 0px;
+}
