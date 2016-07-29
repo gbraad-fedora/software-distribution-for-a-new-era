@@ -564,6 +564,28 @@ exit
   * we already have runc?
 
 
+## Project Atomic
+
+  * immutable infrastructure
+
+
+## Project Atomic
+
+  * Atomic Host
+  * Atomic App and Nulecule
+  * Atomic Registry
+
+
+## Atomic Host
+
+  * runs containers
+
+
+## Atomic Host
+
+  * seamless updates using ostree
+
+
 ## ostree
 
   * "git-like" model for committing and downloading bootable filesystem trees
@@ -584,11 +606,8 @@ exit
   * project atomic
 
 
-## Project Atomic
-
 
 ## Closing thoughts
 
   * packages will not go away
     * role in composition
-
