@@ -8,6 +8,7 @@ me@gbraad.nl
 
 ## Who am I
 
+  * Open Source consultant
 
 
 ## Software distribution
@@ -464,8 +465,6 @@ $ flatpak install gnome org.gnome.Sdk 3.20
 ```
 $ flatpak run --devel --command=bash org.gnome.gedit
 ```
-
-    bash-4.3$
 
 
 ## Home
