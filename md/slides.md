@@ -8,8 +8,6 @@ me@gbraad.nl
 
 ## Who am I
 
-  * software engineer
-  * 
 
 
 ## Software distribution
