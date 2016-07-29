@@ -151,7 +151,7 @@ me@gbraad.nl
   * CentOS 7
 
 
-## alias
+## Alias
 
 ```
 $ cat ./.zshrc.d/alias.sh
@@ -162,14 +162,14 @@ $ cat ./.zshrc.d/alias.sh
     alias youtube-dl='docker run --rm -u $(id -u):$(id -g) -v $PWD:/data vimagick/youtube-dl'
 
 
-## invoke
+## Invoke
 
 ```
 $ youtube-dl https://youtu.be/SquTeFYq3K8
 ```
 
 
-## invoke
+## Invoke
 
 ```
 $ youtube-dl https://youtu.be/SquTeFYq3K8
@@ -184,7 +184,7 @@ $ youtube-dl https://youtu.be/SquTeFYq3K8
     Status: Downloaded newer image for vimagick/youtube-dl:latest
 
 
-## invoke
+## Invoke
 
 ```
 $ youtube-dl https://youtu.be/SquTeFYq3K8
@@ -225,6 +225,15 @@ $ openstack --os-cloud dream server list
 
 ## What just happened?
 
+  * image is pulled from the registry
+  * composed
+    * application
+
+
+## What just happened?
+
+`Dockerfile`
+
 ```
 FROM   fedora:23
 RUN    dnf install -y python-openstackclient
@@ -235,11 +244,20 @@ CMD    [...]
 
 ## What just happened?
 
+`Dockerfile`
+
 ```
 FROM   fedora:23
 RUN    dnf install -y python-pip; pip install python-openstackclient
 VOLUME [...]
 CMD    [...]
+```
+
+
+## Docker build
+
+```
+$ docker build .
 ```
 
 
@@ -320,40 +338,40 @@ MAINTAINER Gerard Braad <me@gbraad.nl>
   * flatpak
 
 
-## flatpak
+## Flatpak
 
   * born under the GNOME umbrella
   * safe environment for running applications
 
 
-## flatpak
+## Flatpak
 
   * "build once, run everywhere"
 
 
-## flatpak
+## Flatpak
 
 ![](img/flatpak.png)
 
 
-## flatpak
+## Flatpak
 
   * application developers are in control of the release cycle
 
 
-## flatpak
+## Flatpak
 
   * "Docker for desktop apps"
 
 
-## flatpak
+## Flatpak
 
   * sandboxing
     * cgroups
     * namespaces
 
 
-## flatpak
+## Flatpak
 
 ```
 $ dnf install -y flatpak
@@ -369,12 +387,12 @@ $ flatpak remote-add --gpg-import=gnome-sdk.gpg gnome-apps https://sdk.gnome.org
 ```
 
 
-## flatpak
+## Flatpak
 
   * runtime
 
 
-## flatpak
+## Flatpak
 
   * runtime
   * application
@@ -424,16 +442,6 @@ $ flatpak run org.gnome.gedit
 $ wget http://download.documentfoundation.org/libreoffice/flatpak/latest/LibreOffice.flatpak
 $ flatpak install --user --bundle LibreOffice.flatpak    
 $ flatpak run org.libreoffice.LibreOffice
-```
-
-
-## Anatomy
-
-```
-metadata
-/files
-/files/bin
-/export
 ```
 
 
@@ -552,29 +560,37 @@ exit
     406
 
 
-## flatpak
+## Flatpak
 
   * runtime
   * application
 
 
-## flatpak
+## Flatpak
 
   * /usr
   * /app
 
 
-## flatpak for server?
+## Install location
+
+  * System wide  
+    `/var/lib/flatpak/`
+  * User  
+    `~/.local/share/flatpak/`
+
+
+## Flatpak for server?
 
   * desktop session
 
 
-## flatpak for server?
+## Flatpak for server?
 
   * we already have Docker?
 
 
-## flatpak for server?
+## Flatpak for server?
 
   * we already have runc?
 
@@ -601,14 +617,14 @@ exit
   * seamless updates using ostree
 
 
-## ostree
+## OSTree
 
   * "git-like" model for committing and downloading bootable filesystem trees
   * checksums individual files
   * content-addressed-object store
 
 
-## ostree
+## OSTree
 
   * unlike git in that it "checks out" the files via hardlinks => immutable
   * Linux VServer hardlinks
@@ -653,7 +669,7 @@ $ ls my-branch/
 ```
 
 
-## ostree
+## Ostree
 
   * flatpak
   * rpm-ostree
@@ -692,11 +708,12 @@ $ ostree remote add fedora-atomic --set=gpg-verify=false https://dl.fedoraprojec
 
 
 ## Rebase
+
 ```
 $ rpm-ostree rebase fedora-atomic:fedora-atomic/24/x86_64/docker-host
 ```
 
-Note: `setenforce 0`
+  * Note: `setenforce 0`
 
 
 ## Result
@@ -710,7 +727,7 @@ Note: `setenforce 0`
 $ rpm-ostree rollback.
 ```
 
-Note: hold SHIFT during startup
+  * Note: hold SHIFT during startup
 
 
 ## Why this matters
@@ -748,6 +765,7 @@ $ systemctl reboot
 ```
 
 ## Results
+
 ```
 $ ssh centos@208.113.134.150
 [centos@atomic-01 ~]$ openstack-status

@@ -130,3 +130,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .reveal section img {
   border: 0px;
 }
+
+.reveal ul {
+    list-style-type: none;
+}
