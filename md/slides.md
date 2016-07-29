@@ -208,6 +208,42 @@ $ openstack --os-cloud dream server list
 
 ## What just happened?
 
+```
+FROM   fedora:23
+RUN    dnf install -y python-openstackclient
+VOLUME [...]
+CMD    [...]
+```
+
+
+## What just happened?
+
+```
+FROM   fedora:23
+RUN    dnf install -y python-pip; pip install python-openstackclient
+VOLUME [...]
+CMD    [...]
+```
+
+
+## Role of packages
+
+  * used for composition
+  * deliverable is a container
+
+
+## Upgrade process
+
+```
+diff --git a/Dockerfile b/Dockerfile
+index 7a1d40f..b82e50c 100644
+--- a/Dockerfile
++++ b/Dockerfile
+@@ -1,4 +1,4 @@
+-FROM fedora:23
++FROM fedora:24
+MAINTAINER Gerard Braad <me@gbraad.nl>
+```
 
 
 ## Docker
@@ -269,12 +305,28 @@ $ openstack --os-cloud dream server list
 
 ## flatpak
 
+  * born under the GNOME umbrella
   * safe environment for running applications
 
 
 ## flatpak
 
+  * "build once, run everywhere"
+
+
+## flatpak
+
 ![Flatpak](img/flatpak.png)
+
+
+## flatpak
+
+  * application developers are in control of the release cycle
+
+
+## flatpak
+
+  * "Docker for desktop apps"
 
 
 ## flatpak
