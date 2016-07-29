@@ -328,7 +328,7 @@ MAINTAINER Gerard Braad <me@gbraad.nl>
 
 ## flatpak
 
-![Flatpak](img/flatpak.png)
+![Architecture](img/flatpak.png)
 
 
 ## flatpak
@@ -611,6 +611,45 @@ exit
   * Linux VServer hardlinks
 
 
+## Example
+```
+$ mkdir repo
+$ alias ost="ostree --repo=`pwd`/repo"
+
+$ ost init
+$ ls repo
+config  objects  refs  remote-cache  tmp
+```
+
+
+## Example
+
+```
+$ mkdir tree
+$ cd tree
+$ echo "x" > 1
+$ echo "y" > 2
+
+$ ost commit --branch=my-branch \
+    --subject="Initial commit" \
+    --body="My commit"
+
+$ ost ls my-branch
+d00755 1002 1002      0 /
+-00644 1002 1002      2 /1
+-00644 1002 1002      2 /2
+```
+
+
+## Example
+
+```
+$ ost checkout my-branch
+$ ls my-branch/
+1  2
+```
+
+
 ## ostree
 
   * flatpak
@@ -778,3 +817,15 @@ Warning keystonerc not sourced
 
   * packages will not go away
     * role in composition
+
+
+## Resources
+
+  * http://fedoraproject.org/
+  * http://flatpak.org
+  * https://wiki.gnome.org/action/show/Projects/OSTree
+  * https://projectatomic.io
+  * https://wiki.gnome.org/Projects/GnomeContinuous
+  * https://github.com/gbraad/docker-flatpak
+  * https://gitlab.com/gbraad/byo-atomic
+  * https://gbraad.gitbooks.io/scratchpad/content/technology/ostree.html
