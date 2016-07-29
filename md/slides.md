@@ -754,53 +754,7 @@ openstack-nova-compute:                 inactive  (disabled on boot)
 openstack-nova-network:                 inactive  (disabled on boot)
 openstack-nova-scheduler:               inactive  (disabled on boot)
 openstack-nova-cert:                    inactive  (disabled on boot)
-openstack-nova-conductor:               inactive  (disabled on boot)
-openstack-nova-console:                 inactive  (disabled on boot)
-openstack-nova-consoleauth:             inactive  (disabled on boot)
-openstack-nova-xvpvncproxy:             inactive  (disabled on boot)
-== Glance services ==
-openstack-glance-api:                   inactive  (disabled on boot)
-openstack-glance-registry:              inactive  (disabled on boot)
-== Keystone service ==
-openstack-keystone:                     inactive  (disabled on boot)
-== Horizon service ==
-openstack-dashboard:                    uncontactable
-== neutron services ==
-neutron-server:                         inactive  (disabled on boot)
-neutron-dhcp-agent:                     inactive  (disabled on boot)
-neutron-l3-agent:                       inactive  (disabled on boot)
-neutron-metadata-agent:                 inactive  (disabled on boot)
-neutron-lbaas-agent:                    inactive  (disabled on boot)
-neutron-openvswitch-agent:              inactive  (disabled on boot)
-neutron-metering-agent:                 inactive  (disabled on boot)
-== Swift services ==
-openstack-swift-proxy:                  inactive  (disabled on boot)
-openstack-swift-account:                inactive  (disabled on boot)
-openstack-swift-container:              inactive  (disabled on boot)
-openstack-swift-object:                 inactive  (disabled on boot)
-== Cinder services ==
-openstack-cinder-api:                   inactive  (disabled on boot)
-openstack-cinder-scheduler:             inactive  (disabled on boot)
-openstack-cinder-volume:                inactive  (disabled on boot)
-openstack-cinder-backup:                inactive  (disabled on boot)
-== Ceilometer services ==
-openstack-ceilometer-api:               inactive  (disabled on boot)
-openstack-ceilometer-central:           inactive  (disabled on boot)
-openstack-ceilometer-compute:           inactive  (disabled on boot)
-openstack-ceilometer-collector:         inactive  (disabled on boot)
-openstack-ceilometer-alarm-notifier:    inactive  (disabled on boot)
-openstack-ceilometer-alarm-evaluator:   inactive  (disabled on boot)
-openstack-ceilometer-notification:      inactive  (disabled on boot)
-== Heat services ==
-openstack-heat-api:                     inactive  (disabled on boot)
-openstack-heat-api-cfn:                 inactive  (disabled on boot)
-openstack-heat-api-cloudwatch:          inactive  (disabled on boot)
-openstack-heat-engine:                  inactive  (disabled on boot)
-== Sahara services ==
-openstack-sahara-all:                   inactive  (disabled on boot)
-== Ironic services ==
-openstack-ironic-api:                   inactive  (disabled on boot)
-openstack-ironic-conductor:             inactive  (disabled on boot)
+[...]
 == Support services ==
 libvirtd:                               active
 openvswitch:                            inactive  (disabled on boot)
@@ -809,7 +763,6 @@ rabbitmq-server:                        inactive  (disabled on boot)
 memcached:                              inactive  (disabled on boot)
 == Keystone users ==
 Warning keystonerc not sourced
-[centos@atomic-01 ~]$ 
 ```
 
 
@@ -823,6 +776,7 @@ Warning keystonerc not sourced
 
   * http://fedoraproject.org/
   * http://flatpak.org
+  * https://github.com/flatpak/flatpak/wiki/Examples
   * https://wiki.gnome.org/action/show/Projects/OSTree
   * https://projectatomic.io
   * https://wiki.gnome.org/Projects/GnomeContinuous
