@@ -8,12 +8,12 @@ Gerard Braad
 
 ## Who am I
 
-  * <span class="orange">F/OSS</span> community and development
+  * <span class="orange">F/OSS</span>
 
 
 ## Who am I
 
-  * <span class="lightblue">Fedora</span> Project, FAmSCo  
+  * <span class="lightblue">Fedora</span> Project  
 
 
 ## Who am I
