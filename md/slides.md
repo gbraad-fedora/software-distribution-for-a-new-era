@@ -8,11 +8,6 @@ Gerard Braad
 
 ## Who am I
 
-Open Source consultant
-
-
-## Who am I
-
   * <span class="orange">F/OSS</span> community and development
 
 
