@@ -852,12 +852,12 @@ Warning keystonerc not sourced
   * https://gbraad.gitbooks.io/scratchpad/content/technology/ostree.html
 
 
-## Get in touch
+## Stay in touch
 
 ![](img/email.png)
 
 
-## Get in touch
+## Stay in touch
 
 ![](img/wechat.jpg)
 
