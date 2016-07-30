@@ -230,6 +230,18 @@ $ youtube-dl https://youtu.be/SquTeFYq3K8
     Deleting original file Tomorrowland 2015 _ Josh Wink-SquTeFYq3K8.f251.webm (pass -k to keep)
 
 
+## Software bundle
+
+```
+$ docker pull gbraad/mono
+Using default tag: latest
+Trying to pull repository docker.io/gbraad/mono ... 
+latest: Pulling from docker.io/gbraad/mono
+7c91a140e7a1: Downloading [==>                                                ] 4.308 MB/72.87 MB
+f01a995607d8: Downloading [====>                                              ] 19.97 MB/239.7 MB
+```
+
+
 ## OpenStack client
 
 ```
@@ -245,12 +257,13 @@ $ openstack --os-cloud dream server list
 
 ## What just happened?
 
-  * image is pulled from the registry
+  * image is pulled from a registry
   * composed
+    * base
     * application
 
 
-## What just happened?
+## Composition
 
 `Dockerfile`
 
@@ -262,7 +275,7 @@ CMD    [...]
 ```
 
 
-## What just happened?
+## Composition
 
 `Dockerfile`
 
@@ -274,10 +287,17 @@ CMD    [...]
 ```
 
 
-## Docker build
+## Building
 
 ```
 $ docker build .
+```
+
+
+## Removing
+
+```
+$ docker rmi [imagename]
 ```
 
 
