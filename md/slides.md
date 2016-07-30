@@ -3,12 +3,37 @@
 ### Software distribution for a new era
 Gerard Braad
 
-me@gbraad.nl
+<span class="lightblue">me</span><span class="white">@gbraad</span><span class="orange">.nl</span>  
 
 
 ## Who am I
 
-  * Open Source consultant
+Open Source consultant
+
+
+## Who am I
+
+  * <span class="orange">F/OSS</span> community and development
+
+
+## Who am I
+
+  * <span class="lightblue">Fedora</span> Project, FAmSCo  
+
+
+## Who am I
+
+  * <span class="red">OpenStack</span>
+
+
+## Who am I
+
+  * Tinkerer
+
+
+## Who am I
+
+  * ...
 
 
 ## Software distribution
@@ -626,8 +651,9 @@ exit
 
 ## OSTree
 
-  * unlike git in that it "checks out" the files via hardlinks => immutable
-  * Linux VServer hardlinks
+  * Unlike git
+    * it "checks out" the files via hardlinks
+    * immutable
 
 
 ## Example
@@ -667,6 +693,11 @@ $ ost checkout my-branch
 $ ls my-branch/
 1  2
 ```
+
+
+## Provides
+
+  * something between 'package-based' and 'image-based' deployment
 
 
 ## Ostree
