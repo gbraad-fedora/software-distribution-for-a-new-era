@@ -3,7 +3,7 @@
 ## Software distribution for a new era
 Gerard Braad
 
-me@gbraad.nl
+<span class="lightblue">me</span><span class="white">@gbraad</span><span class="orange">.nl</span>
 
 
   * [Slides](./slides.html)
