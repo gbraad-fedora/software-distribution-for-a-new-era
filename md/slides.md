@@ -237,7 +237,7 @@ $ docker pull gbraad/mono
 Using default tag: latest
 Trying to pull repository docker.io/gbraad/mono ... 
 latest: Pulling from docker.io/gbraad/mono
-7c91a140e7a1: Downloading [==>                                                ] 4.308 MB/72.87 MB
+7c91a140e7a1: Already exists
 f01a995607d8: Downloading [====>                                              ] 19.97 MB/239.7 MB
 ```
 
