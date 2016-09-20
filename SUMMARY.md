@@ -1,3 +1,3 @@
 # Summary
 
-  * [Slides](md/slides.md)
+  * [Slides](slides.md)
