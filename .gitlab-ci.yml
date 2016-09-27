@@ -6,7 +6,8 @@ pages:
     - cp -r assets/public-content/reveal/* public/
     - pandoc -t html5 --template assets/templates/reveal-slides-template.html --standalone --section-divs ./index.md -o ./public/index.html
     - pandoc -t html5 --template assets/templates/reveal-slides-template.html --standalone --section-divs ./slides.md -o ./public/slides.html
-    - pandoc -V geometry:margin=1in ./slides.md -o ./public/slides.pdf
+    - pandoc -V geometry:margin=1in ./slides.md -o ./public/handout.pdf
+    - phantomjs ./assets/scripts/topdf.js ./public/slides.html ./public/slides.pdf 0.7
     - cp -r img public/
   artifacts:
     paths:

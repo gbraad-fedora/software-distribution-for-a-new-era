@@ -6,5 +6,6 @@ Gerard Braad
 <span class="lightblue">me</span><span class="white">@gbraad</span><span class="orange">.nl</span>
 
 
-  * [Slides](./slides.html)
-  * [Handout](./slides.pdf)
+  * [Slides](./slides.html) as HTML
+  * [Slides](./slides.pdf) as PDF
+  * [Handout](./handout.pdf)
